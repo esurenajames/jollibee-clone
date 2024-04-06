@@ -1,0 +1,433 @@
+@font-face {
+    font-family: 'Jellee Roman';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Jellee Roman'), url('Jellee-Roman.woff') format('woff');
+}
+
+/* Apply the font-family to elements */
+body {
+    font-family: 'Jellee Roman', sans-serif;
+    margin: 0px;
+}
+
+html { 
+    scroll-behavior: smooth;
+}
+
+* {
+    --jollibee-red: #d6001c;
+}
+
+/* NavBar Section */
+.nav-nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.navbar { 
+    background-color: var(--jollibee-red);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 18px;
+    height: 100px;
+
+}
+.navbar-bottom {
+    height: 5px;
+    background-color: #ffa400;
+}
+.navbar-left {
+    margin-left: 350px;
+}
+.navbar-left img {
+    height: 55px;
+}
+.navbar-right {
+    display: flex;
+    align-items: center;
+    margin-right: 350px;
+}
+.navbar-right > * {
+    padding: 20px;
+}
+.navbar-right a{
+    text-decoration: none;
+    color: #fff;
+    display:block;
+}
+
+.footer-link p:hover {
+    color: #fa8003; /* Change color on hover to your desired color */
+}
+
+.navbar-right-text:hover, .navbar-left-text:hover {
+    color: #fa8003;
+}
+
+.order-now { 
+    background-color: #fa8003;
+    border-radius: 30px;
+    transition: .3s;
+    box-shadow: 0 3px 6px rgb(0 0 0 / 16%);
+    padding: 15px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.order-now:hover {
+    background-color: #ff620f;
+}
+.menu-head, .promo-head {
+    padding-bottom: 45px;
+    padding-top: 45px;
+}
+.menu-head i, .promo-head i {
+    font-size: 12px;
+}
+.menu-drop, .promo-drop{
+    display: none;
+    position: absolute;
+    top: 105px;
+    background-color: #fff;
+    min-width: 115px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    font-weight: 400;
+}
+.menu-head:hover .menu-drop{
+    display: block;
+}
+.menu-drop a, .promo-drop a{   
+    padding: 12px 16px;
+    color: #131313;
+    font-family: Segoe UI;
+    font-size: 16px;
+    padding: 15px;
+}
+.promo-head:hover .promo-drop{
+    display: block;
+  }
+.menu-drop a:hover, .promo-drop a:hover{   
+    background-color: #d9d9d9;
+}
+
+/* Landing Section */
+.landing { 
+    margin-top: 105px;
+    background-image: url("https://queen.jollibee.com.ph/2021/12/home_banner_1.png");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 500px;
+    display: grid;
+    align-items: center;
+}
+.landing-content {
+    display: grid;
+    grid-template-columns: 600px 600px;
+    margin: auto;
+}
+.delivery {
+    background-color: #fa8003;
+    border-radius: 40px;
+    transition: .3s;
+    box-shadow: 0 3px 6px rgb(0 0 0 / 16%);
+    padding: 20px;
+    margin: auto;
+    width: 150px;
+    font-size: 25px;
+}
+.delivery:hover {
+    background-color: #ff620f;
+}
+.landing-text > * {
+    color: white;
+    text-decoration: none;
+    text-align: center ;
+    display: flex;
+    justify-content: center;
+}
+.landing-text h1 {
+    font-size: 48px;
+}
+.landing-text h3 {
+    font-size: 28px;
+}
+.cust-actions{
+    width: 50%;
+    border-bottom: 2px solid #d5d5d5;
+    display: flex;
+    margin: auto;
+}
+.cust-actions-content{
+    width: 80%;
+    display: flex;
+    margin: auto;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    justify-content: space-between;
+}
+
+.order-pickup, .download-app, .callnum {
+    text-align: center;
+}
+
+/* Promos section */
+.promos {
+    width: 80%; 
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 20px;
+    padding-top: 50px;
+}
+.promos-content img {
+    height: 400px;
+    margin: 0 20px 0 20px;
+    border-radius: 10px;
+}
+.promos-content {
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* CSS for "See all Promos", "View Menu" */
+.action-button { 
+    text-decoration: none;
+    color: white;
+    background-color: #fa8003;
+    border-radius: 40px;
+    transition: .3s;
+    box-shadow: 0 3px 6px rgb(0 0 0 / 16%);
+    padding: 20px 10px;
+    font-size: 25px;
+    margin: 30px auto 30px auto;
+    display: flex;
+    width: 200px;
+    justify-content: center;
+}
+
+.action-button:hover { 
+    background-color: #ff620f;
+}
+
+/* Menu section */
+
+.menu {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 20px;
+    background-color: #ffeab8;
+    padding: 15px 0 15px 0;
+    
+}
+
+.menu-content-box{
+    width: 70%;
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    color: white;
+}
+.menu-content-box a{
+    text-decoration: none;
+    color: white;
+}
+
+.menu-1{
+    width: 380px;
+    height: 400px;
+    background-color: #d6001c;
+    border-radius: 20px;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+.menu-1 img { 
+    width: 220px;
+    margin-top: 30px;
+}
+.menu-2 img { 
+    width: 230px;
+    margin-top: 120px;
+}
+.menu-3 img { 
+    width: 230px;
+    margin-top: 83px;
+}
+.menu-2 {
+    width: 380px;
+    height: 400px;
+    background-color: #ffa400;
+    border-radius: 20px;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+.menu-3 {
+    width: 380px;
+    height: 400px;
+    background-color: #009ca6;
+    border-radius: 20px;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+.menu-content-box h3{
+    font-size: 30px;
+    text-align: left;
+    padding: 10px 0 0 10px;
+    margin: 0;
+}
+.menu-content-box h4 {
+    font-size: 22px;
+    text-align: left;
+    padding-left: 10px;
+    margin: 0;
+}
+
+.what-we{
+    width: 50%;
+    display: flex;
+    margin: 50px auto 50px auto;
+}
+
+.what-we-do{
+    padding-right: 320px;
+}
+
+.what-we-do, .what-we-stand-for {
+    margin: 0px;
+}
+
+.what-we-content {
+    text-align: center;
+    display: flex;
+}
+
+.what-we-do img { 
+    box-shadow: 30px 30px 0px 15px rgba(255,164,0,1);
+    -webkit-box-shadow: 30px 30px 0px 15px rgba(255,164,0,1);
+    -moz-box-shadow: 30px 30px 0px 15px rgba(255,164,0,1);
+    border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    margin: auto;
+}
+
+.what-we-stand-for img { 
+    box-shadow: -30px 30px 0px 15px rgba(214,0,28,0.75);
+    -webkit-box-shadow: -30px 30px 0px 15px rgba(214,0,28,0.75);
+    -moz-box-shadow: -30px 30px 0px 15px rgba(214,0,28,0.75);  
+    border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    margin: auto;
+}
+
+.what-we-do h2, .what-we-stand-for h2 {
+    width: 270px;
+    padding-top: 70px;
+    padding-bottom: 40px;
+    margin: auto;
+}
+
+.what-we-do h2 {
+    border-bottom: 5px solid rgba(255,164,0,1);
+
+}
+
+.what-we-stand-for h2 {
+    border-bottom: 5px solid rgba(214,0,28,0.75);
+}
+
+.what-we p {
+    text-align: center;
+    font-family: 'Segoe UI';
+    font-size: 18px;
+}
+
+/* Footer */
+.footer {
+    width: 100%;
+    border-top: 3px solid #ffa400;
+}
+
+.footer-content {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 18px;
+    margin: 30px auto;
+}
+
+.footer-content-left img {
+    height: 80px;
+}
+
+.footer-content-right a{
+    background-color: #fa8003;
+    border-radius: 40px;
+    transition: .3s;
+    box-shadow: 0 3px 6px rgb(0 0 0 / 16%);
+    padding: 20px;
+    margin: auto;
+    width: 150px;
+    font-size: 25px;
+    text-decoration: none;
+    color: white;
+}
+
+.footer-links {
+    display: flex;
+    font-size: 20px;
+    justify-content: center;
+}
+
+.socials {
+    display: flex;
+}
+
+.socials > * {
+    padding: 0 47px;
+}
+
+.socials img { 
+    height: 40px;
+}
+
+.socials a, p { 
+    font-family: 'Segoe UI';
+    font-size: 16px;
+    text-decoration: none;
+    color: black;
+}
+
+.download { 
+    align-items: center;
+}
+
+.copyright {
+    width: 70%;
+    display: flex;
+    margin: auto;
+}
+
+/* Scroll top */
+.scrollTop { 
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+    background-color: #ff620f;
+    width: 42px;
+    height: 42px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 42px;
+    border-radius: 100px;
+    color: white;
+    font-size: 20px;
+}
