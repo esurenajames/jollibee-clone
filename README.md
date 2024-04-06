@@ -1,7 +1,6 @@
 Jollibee Clone Website
 
-This project is a clone of the official Jollibee website, aimed at replicating its design and functionality. It includes various sections such as navigation, landing page, menu, promotions, and a footer. Additionally, it integrates a chatbot feature using ChatBot.com, providing users with interactive assistance and support.
-Features
+This project is a clone of the landing page of the official Jollibee website, designed to replicate its visual appearance and functionality. It includes various sections such as navigation, landing page content, and a footer. Additionally, it integrates a chatbot feature using ChatBot.com, providing users with interactive assistance and support.
 
     Responsive Design: The website is designed to be fully responsive, ensuring optimal viewing experience across a wide range of devices, including desktops, tablets, and smartphones.
     Interactive Navigation: The navigation menu provides easy access to different sections of the website, enhancing user experience and navigation.
